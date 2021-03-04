@@ -1,0 +1,6 @@
+services:
+  mypython:
+    build: ./
+    volumes:
+      - ./:/mnt
+    tty: true
