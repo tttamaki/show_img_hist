@@ -1,5 +1,6 @@
 FROM python:slim
 
-RUN pip install streamlit scikit-image
+ADD requirements.txt /tmp
+RUN pip install -r /tmp/requirements.txt
 
 WORKDIR /mnt
