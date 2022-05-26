@@ -4,8 +4,7 @@ services:
   mypython:
     build: ./
     volumes:
-      - ../:/mnt
+      - ./:/mnt
     tty: true
-    working_dir: /mnt/14_ci_cd
     ports:
       - "8501:8501"
