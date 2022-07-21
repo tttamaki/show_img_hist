@@ -4,10 +4,10 @@ import streamlit as st
 from skimage.io import imread
 
 
-# download the image
+# download the imsage
 img_url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Mount_Fuji_from_Mount_Aino.jpg/640px-Mount_Fuji_from_Mount_Aino.jpg'
 
-im = imread(img_url)
+im = imread(img_url))
 
 st.image(im, caption='image from wikimedia commons',
          use_column_width=True)
