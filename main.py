@@ -4,7 +4,7 @@ import streamlit as st
 from skimage.io import imread
 
 
-# download the image
+# download the imag
 img_url = 'https://upload.wikimedia.org/wikipedia/commons/1/12/K2_2006b.jpg'
 
 im = imread(img_url)
