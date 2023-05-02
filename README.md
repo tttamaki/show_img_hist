@@ -2,6 +2,13 @@
 
 - an example of streamlit to show the histogram of an image
 
-## References
+## deploy on Render.com
 
-- [setup.sh and Procfile](https://gilberttanner.com/blog/deploying-your-streamlit-dashboard-with-heroku)
+### local check
+
+```bash:
+DOCKER_BUILDKIT=1 docker build -t render_test .
+docker run -it --rm -p 8501:8501 -d render_test
+```
+
+and access to http://localhost:8501
