@@ -1,8 +1,0 @@
-- type: web
-  name: mypython
-  env: docker
-  dockerfilePath: ./dockerfile
-  plan: free
-  envVars:
-    - key: PORT
-      value: 8501
