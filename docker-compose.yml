@@ -8,3 +8,4 @@ services:
     tty: true
     ports:
       - "8501:8501"
+    entrypoint: streamlit run main.py
