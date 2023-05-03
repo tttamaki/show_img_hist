@@ -7,6 +7,5 @@ services:
     #   - ./:/mnt
     tty: true
     ports:
-      - "8501:8501"
-    entrypoint: /tmp/start_compose.sh
-    # entrypoint: /tmp/start.sh
+      - "8000:8000"
+    entrypoint: gunicorn -b 0.0.0.0:8000 main:app

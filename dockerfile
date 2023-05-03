@@ -4,8 +4,7 @@ COPY requirements.txt /tmp/
 RUN pip install -U pip \
     && pip install -r /tmp/requirements.txt
 
-COPY start_compose.sh start.sh main.py /tmp/
-RUN chmod +x /tmp/start.sh /tmp/start_compose.sh
-# ENTRYPOINT [ "/tmp/start.sh" ]
-
-EXPOSE 8501
+COPY main.py /tmp/
+WORKDIR /tmp/
+EXPOSE 8000
+ENTRYPOINT [ "gunicorn", "-b", "0.0.0.0:8000", "main:app" ]

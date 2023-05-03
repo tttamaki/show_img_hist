@@ -1,5 +1,2 @@
-pandas
-streamlit
-numpy
-scikit_image
-typing_extensions
+Flask
+Gunicorn
