@@ -1,7 +1,9 @@
 FROM python:slim
 
-ADD requirements.txt /tmp
-RUN pip install -r /tmp/requirements.txt
+COPY requirements.txt /tmp/
+RUN pip install -U pip \
+    && pip install -r /tmp/requirements.txt
 
-ADD main.py /tmp
-WORKDIR /tmp
+COPY start.sh main.py /tmp/
+RUN chmod +x /tmp/start.sh
+ENTRYPOINT [ "/tmp/start.sh" ]
