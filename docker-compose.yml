@@ -3,9 +3,7 @@ version: "3"
 services:
   mypython:
     build: ./
-    # volumes:
-    #   - ./:/mnt
     tty: true
     ports:
       - "8501:8501"
-    entrypoint: /tmp/start.sh
+    entrypoint: streamlit run /tmp/main.py
