@@ -1,3 +1,3 @@
 #!/bin/bash
 
-streamlit run /tmp/main.py &
+streamlit run /tmp/main.py

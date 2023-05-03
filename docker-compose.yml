@@ -8,5 +8,4 @@ services:
     tty: true
     ports:
       - "8501:8501"
-    entrypoint: /tmp/start_compose.sh
-    # entrypoint: /tmp/start.sh
+    entrypoint: /tmp/start.sh
