@@ -9,3 +9,4 @@
 # ENTRYPOINT [ "/tmp/start.sh" ]
 
 FROM tttamaki/show_img_hist
+ENV PORT=8888
