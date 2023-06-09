@@ -11,7 +11,7 @@ docker compose build
 docker compose up -d
 ```
 
-and access to http://localhost:8501
+and access to http://localhost:8888
 
 To stop the container,
 

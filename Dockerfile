@@ -1,9 +1,9 @@
 FROM python:slim
 
-COPY requirements.txt /tmp/
+COPY requirements.txt /root/
 RUN pip install -U pip \
-    && pip install -r /tmp/requirements.txt
+    && pip install -r /root/requirements.txt
 
-COPY main.py start.sh /tmp/
-RUN chmod +x /tmp/start.sh
-ENTRYPOINT [ "/tmp/start.sh" ]
+COPY main.py start.sh /root/
+RUN chmod +x /root/start.sh
+CMD [ "/root/start.sh" ]
