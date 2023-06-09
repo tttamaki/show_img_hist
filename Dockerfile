@@ -9,4 +9,4 @@
 # ENTRYPOINT [ "/tmp/start.sh" ]
 
 FROM tttamaki/show_img_hist
-ENV PORT=8888
+ENTRYPOINT [ "streamlit", "run", "/tmp/main.py", "--server.port=${PORT}", "--server.address=0.0.0.0"]
